@@ -24,4 +24,5 @@ def hello():
 
     except Error as e:
         print("Error while connecting to MySQL", e)
-    return
+        
+    return '<h1>Hello, World!</h1>'
