@@ -8,5 +8,5 @@ COPY . /app
 
 ENV FLASK_APP=${FLASK_APP}
 RUN pip install -r requirements.txt
-RUN ECHO ${DATABASE_HOSTNAME}
+RUN echo ${DATABASE_HOSTNAME}
 CMD ["flask", "run", "--host=0.0.0.0", "--port=8080"]
