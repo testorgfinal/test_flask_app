@@ -24,6 +24,9 @@ def hello():
 
     except Error as e:
         print("hostname: ",os.getenv('HOST'))
+        print("DB: ",os.getenv('DATABASE'))
+        print("username: ",os.getenv('USER'))
+        print("password: ",os.getenv('PASSWORD'))
         print("Error while connecting to MySQL", e)
         
     return '<h1>Hello, World!</h1>'
