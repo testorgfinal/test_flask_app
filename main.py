@@ -23,6 +23,7 @@ def hello():
             print("You're connected to database: ", record)
 
     except Error as e:
+        print("hostname: ",os.getenv('HOST'))
         print("Error while connecting to MySQL", e)
         
     return '<h1>Hello, World!</h1>'
