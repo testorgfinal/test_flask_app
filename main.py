@@ -16,7 +16,7 @@ def hello():
                                              password=os.getenv('PASSWORD'))
         if connection.is_connected():
             db_Info = connection.get_server_info()
-            print("Connected to MySQL Server version ", db_Info)
+            print("Connected to - MySQL Server version ", db_Info)
             cursor = connection.cursor()
             cursor.execute("select database();")
             record = cursor.fetchone()
